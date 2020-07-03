@@ -88,3 +88,34 @@ void *RtlGetElementGenericTable(GenericTable *param1, u32 targetIndx)
 	param1->recentFoundIndx = targetIndx+1;
 	return &found->dataPtr;
 }
+
+void RtlInsertElementGenericTable(param1, param2, param3, param4)
+{
+	local18;
+	result = FUN_180064248(param1, param2, &local18); // local20
+	RtlInsertElementGenericTableFull(param1, param2, 
+			param3, param4, local18, result);
+}
+
+// RtlLocateNodeGenericTable
+FUN_180064248(param1, param2, param3)
+{
+	if (*param1) {
+		
+	} else {
+		return 0;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
